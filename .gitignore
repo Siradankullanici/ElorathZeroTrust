@@ -1,6 +1,9 @@
 # C/C++
-/sdk/build/
+/src/driver/build/
 
 # Rust
-/communicator/target/
-/communicator/Cargo.lock
+/src/communicator/target/
+/src/communicator/Cargo.lock
+
+# Generated files
+baseline.json
