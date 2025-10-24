@@ -1,6 +1,6 @@
 use serde::Deserialize;
 use tokio::sync::mpsc;
-use crate::Result;
+use crate::ipc_error::IpcResult;
 
 #[derive(Deserialize, Debug, Clone)]
 pub struct ProcessAlert {
@@ -12,7 +12,7 @@ pub struct ProcessAlert {
 }
 
 /// Simulates listening for alerts from the driver.
-pub async fn listen_for_alerts(tx: mpsc::Sender<ProcessAlert>) -> Result<()> {
+pub async fn listen_for_alerts(tx: mpsc::Sender<ProcessAlert>) -> IpcResult<()> {
     // In a real application, this would connect to a named pipe.
     // Here, we'll just generate some fake alerts for demonstration purposes.
 
