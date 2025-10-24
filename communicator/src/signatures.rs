@@ -1,7 +1,7 @@
 use sha2::{Digest, Sha256};
 use std::fs;
 use std::path::Path;
-use crate::Result;
+use crate::error::Result;
 
 pub fn generate_signature<P: AsRef<Path>>(path: P) -> Result<String> {
     let data = fs::read(path)?;

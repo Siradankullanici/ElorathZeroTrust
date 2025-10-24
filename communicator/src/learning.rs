@@ -3,7 +3,7 @@ use crate::ipc::ProcessAlert;
 use std::collections::HashSet;
 use std::fs;
 use std::path::Path;
-use crate::Result;
+use crate::error::Result;
 
 #[derive(Serialize, Deserialize, Debug, Default)]
 pub struct Baseline {
