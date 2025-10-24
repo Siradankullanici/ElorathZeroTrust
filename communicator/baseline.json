@@ -1,0 +1,6 @@
+{
+  "trusted": [
+    "\\Device\\HarddiskVolume3\\Users\\Test\\Downloads\\mimikatz.exe:\\Device\\HarddiskVolume3\\Windows\\System32\\ntoskrnl.exe",
+    "\\Device\\HarddiskVolume3\\Windows\\System32\\cmd.exe:\\Device\\HarddiskVolume3\\Program Files\\MyProtectedApp\\app.exe"
+  ]
+}
